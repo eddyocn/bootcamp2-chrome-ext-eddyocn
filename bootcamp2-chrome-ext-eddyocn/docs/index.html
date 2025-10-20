@@ -1,103 +1,100 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Hora certa - Extensão Chrome</title>
-    <style>
-        :root {
-            --primary: #007bff;
-            --bg: #f8f9fa;
-            --text: #333;
-            --shadow: rgba(0, 0, 0, 0.1);
-        }
+---
+layout: default
+title: "Hora certa - Extensão Chrome"
+---
 
-        body {
-            font-family: "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 40px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+<div class="card">
+    <h1>🚀 Hora certa</h1>
+    <p>Extensão para Google Chrome (Manifest V3)<br>Projeto desenvolvido para o Bootcamp II.</p>
+    <img src="{{ '/assets/images/horacerta.png' | relative_url }}" alt="Visual da extensão Hora certa">
+    <img src="{{ '/assets/images/horacerta2.png' | relative_url }}" alt="Visual da extensão Hora certa2">
+    <a class="download-btn" href="https://github.com/eddyocn/bootcamp2-chrome-ext-eddyocn/releases">
+        Baixar Extensão (.zip)
+    </a>
+</div>
 
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 10px;
-            color: var(--primary);
-        }
+<footer>
+    Feito por <a href="https://github.com/eddyocn" target="_blank">eddyocn</a>
+</footer>
 
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-        }
+<style>
+:root {
+    --primary: #007bff;
+    --bg: #f8f9fa;
+    --text: #333;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
 
-        .card {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px var(--shadow);
-            padding: 30px;
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
+body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px var(--shadow);
-        }
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
 
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-            border: 1px solid #ddd;
-            margin-top: 15px;
-        }
+p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
 
-        a.download-btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background-color: var(--primary);
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: background-color 0.2s ease, transform 0.2s ease;
-        }
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px var(--shadow);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-        a.download-btn:hover {
-            background-color: #0056b3;
-            transform: translateY(-2px);
-        }
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px var(--shadow);
+}
 
-        footer {
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #666;
-        }
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+}
 
-        footer a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="card">
-        <h1>🚀 Hora certa</h1>
-        <p>Extensão para Google Chrome (Manifest V3)<br>Projeto desenvolvido para o Bootcamp II.</p>
-        <img src="horacerta.png" alt="Visual da extensão Hora certa">
-        <img src="horacerta2.png" alt="Visual da extensão Hora certa2">
-        <a class="download-btn" href="https://github.com/eddyocn/bootcamp2-chrome-ext-eddyocn/releases">
-            Baixar Extensão (.zip)
-        </a>
-    </div>
+a.download-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
 
-    <footer>
-        Feito por <a href="https://github.com/eddyocn" target="_blank">eddyocn</a>
-    </footer>
-</body>
-</html>
+a.download-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer a {
+    color: var(--primary);
+    text-decoration: none;
+}
+</style>
